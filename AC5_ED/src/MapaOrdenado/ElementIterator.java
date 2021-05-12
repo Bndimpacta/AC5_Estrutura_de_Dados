@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 
-public class ElementIterator13<E> implements Iterator<E> {
+public class ElementIterator<E> implements Iterator<E> {
 
 	protected PositionList<E> list;
 
@@ -13,7 +13,7 @@ public class ElementIterator13<E> implements Iterator<E> {
 
 	// Cria um elemento iterator
 
-	public ElementIterator13(PositionList<E> L) {
+	public ElementIterator(PositionList<E> L) {
 
 		list = L;
 
