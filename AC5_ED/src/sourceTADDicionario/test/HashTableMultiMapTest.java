@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import sourceTADDicionario.HashTableMultiMap;
 
-class HashTableMultiMapTest {
+public class HashTableMultiMapTest {
 	@Test
-	void test() {
+	public void test() {
 	HashTableMultiMap<Integer, String> D = 
 	new HashTableMultiMap<Integer, String>();
 	assertEquals("5=A", D.put(5, "A").toString());
