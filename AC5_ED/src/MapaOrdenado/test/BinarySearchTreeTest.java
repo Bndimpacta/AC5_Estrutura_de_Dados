@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Test;
 
 import MapaOrdenado.BinarySearchTree;
 
-class BinarySearchTreeTest {
+public class BinarySearchTreeTest {
 
 	@Test
 
-	void test() {
+	public void test() {
 
 		BinarySearchTree<Integer, Integer> A = new BinarySearchTree<Integer, Integer>();
 
@@ -26,32 +26,32 @@ class BinarySearchTreeTest {
 
 		A.put(76, 76); A.put(80, 80);
 
-		System.out.println("Uso da impressão parentizada de uma árvore binária de busca \n"
+		System.out.println("Uso da impressÃ£o parentizada de uma Ã¡rvore binÃ¡ria de busca \n"
 
 							
-							+ "para visualizar sua estrutura após as inserções e remoções");
+							+ "para visualizar sua estrutura apÃ³s as inserÃ§Ãµes e remoÃ§Ãµes");
 
 		System.out.println("========================================");
 
-		System.out.println("Antes da inserção de 78\n" + A.printExpression(A.root()));
+		System.out.println("Antes da inserÃ§Ã£o de 78\n" + A.printExpression(A.root()));
 
 		A.put(78, 78);
 
 		assertEquals("[17, 28, 29, 32, 44, 54, 65, 76, 78, 80, 82, 88, 97]", A.keySet().toString());
 
-		System.out.println("Após a inserção de 78\n" + A.printExpression(A.root()));
+		System.out.println("ApÃ³s a inserÃ§Ã£o de 78\n" + A.printExpression(A.root()));
 
 		A.remove(32);
 
 		assertEquals("[17, 28, 29, 44, 54, 65, 76, 78, 80, 82, 88, 97]", A.keySet().toString());
 
-		System.out.println("Após a remoção de 32\n" + A.printExpression(A.root()));
+		System.out.println("ApÃ³s a remoÃ§Ã£o de 32\n" + A.printExpression(A.root()));
 
 		A.remove(65);
 
 		assertEquals("[17, 28, 29, 44, 54, 76, 78, 80, 82, 88, 97]", A.keySet().toString());
 
-		System.out.println("Após a remoção de 65\n" + A.printExpression(A.root()));
+		System.out.println("ApÃ³s a remoÃ§Ã£o de 65\n" + A.printExpression(A.root()));
 
 		A.put(78, 0);
 
@@ -59,7 +59,7 @@ class BinarySearchTreeTest {
 
 		assertEquals("[17, 28, 29, 44, 54, 76, 0, 80, 82, 88, 97]", A.values().toString());
 
-		System.out.println("Após inserção de 78\n" + A.printExpression(A.root()));
+		System.out.println("ApÃ³s inserÃ§Ã£o de 78\n" + A.printExpression(A.root()));
 
 	}
 
