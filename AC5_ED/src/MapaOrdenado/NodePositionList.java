@@ -274,7 +274,7 @@ public class NodePositionList<E> implements PositionList<E> {
 	
 	// Retorna o iterator a partir do ElemenIterator.
 	public Iterator<E> iterator() {
-		return (Iterator<E>) new ElementIterator13<E>(this);
+		return (Iterator<E>) new ElementIterator<E>(this);
 	}
 
 	public String toString() {
